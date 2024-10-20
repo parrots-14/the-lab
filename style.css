@@ -1,0 +1,7 @@
+body {
+    background-image: url('https://github.com/parrots-14/the-lab/blob/main/background.png?raw=true');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
