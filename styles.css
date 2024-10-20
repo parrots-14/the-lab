@@ -15,19 +15,18 @@ body {
 }
 
 .aero-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     margin: 20px auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-    border: none;
+    width: 400px;  /* Adjust the width for longer buttons */
+    height: 100px;  /* Adjust the height */
+    border-radius: 20px; /* Keeps the square-round style */
     background: linear-gradient(to top, rgb(131, 191, 216), rgb(213, 236, 249));
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 -4px 6px rgba(255, 255, 255, 0.6);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 10px;
 }
 
 .aero-button:hover {
@@ -38,4 +37,28 @@ body {
 .aero-button:active {
     transform: translateY(0);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 -4px 6px rgba(255, 255, 255, 0.6);
+}
+
+.button-icon {
+    width: 80px; /* Adjust the size of the image */
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px; /* Slightly round the image corners */
+    object-fit: cover; /* Ensure the image fits within the size constraints */
+}
+
+.button-text {
+    text-align: left;
+}
+
+.button-text h2 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.button-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: white;
 }
